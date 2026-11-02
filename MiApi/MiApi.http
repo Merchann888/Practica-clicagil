@@ -1,0 +1,29 @@
+@MiApi_HostAddress = http://localhost:5036
+
+### Obtener todas las tecnologías
+GET {{MiApi_HostAddress}}/api/tecnologias
+Accept: application/json
+
+### Obtener una tecnología por ID
+GET {{MiApi_HostAddress}}/api/tecnologias/1
+Accept: application/json
+
+### Crear una tecnología
+POST {{MiApi_HostAddress}}/api/tecnologias
+Content-Type: application/json
+
+{
+  "nombre": "C#"
+}
+
+### Actualizar una tecnología
+PUT {{MiApi_HostAddress}}/api/tecnologias/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nombre": "C# 12"
+}
+
+### Eliminar una tecnología
+DELETE {{MiApi_HostAddress}}/api/tecnologias/1
